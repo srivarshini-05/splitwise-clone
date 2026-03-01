@@ -1,0 +1,155 @@
+.shared-page{
+padding:25px;
+background:#f7f9fc;
+min-height:100vh;
+font-family:"Inter",sans-serif;
+}
+
+/* Back button */
+
+.back-btn{
+color:#4a5568;
+cursor:pointer;
+margin-bottom:20px;
+font-size:15px;
+}
+
+/* Header */
+
+.shared-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+flex-wrap:wrap;
+gap:15px;
+}
+
+/* Title */
+
+.shared-title{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.shared-title h1{
+font-size:34px;
+font-weight:700;
+background:linear-gradient(90deg,#8a2be2,#ff4da6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* Icon */
+
+.shared-icon{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+background:linear-gradient(135deg,#9b59b6,#ff5fa2);
+color:white;
+font-size:22px;
+}
+
+/* Create button */
+
+.create-group-btn{
+background:linear-gradient(90deg,#8a2be2,#ff4da6);
+border:none;
+padding:12px 22px;
+border-radius:25px;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+/* Groups */
+
+.groups-container{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* Card */
+
+.group-card{
+display:flex;
+align-items:center;
+gap:18px;
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+cursor:pointer;
+transition:all .2s ease;
+}
+
+.group-card:hover{
+transform:translateY(-3px);
+}
+
+/* Group icon */
+
+.group-icon{
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+background:linear-gradient(135deg,#9b59b6,#ff5fa2);
+color:white;
+font-size:22px;
+}
+
+/* Info */
+
+.group-info h3{
+margin:0;
+font-size:20px;
+}
+
+.group-info p{
+margin:3px 0 8px;
+color:#718096;
+}
+
+/* Member badge */
+
+.member-badge{
+background:#edf2f7;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+color:#7c3aed;
+}
+
+/* Empty text */
+
+.empty-text{
+color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.shared-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.shared-title h1{
+font-size:26px;
+}
+
+.group-card{
+padding:18px;
+}
+
+}

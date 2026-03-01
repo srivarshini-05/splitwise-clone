@@ -1,0 +1,88 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.register-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:linear-gradient(135deg,#f39acb,#9f7aea);
+  padding:20px;
+}
+
+.register-card{
+  background:white;
+  padding:35px 25px;
+  border-radius:20px;
+
+  width:100%;
+  max-width:360px;
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.register-card h1{
+  margin-bottom:10px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:#666;
+  margin-bottom:25px;
+}
+
+.register-card input{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+
+  border-radius:12px;
+  border:1px solid #ddd;
+
+  font-size:14px;
+}
+
+.register-card input:focus{
+  outline:none;
+  border-color:#9f7aea;
+}
+
+.register-card button{
+  width:100%;
+  padding:14px;
+
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(90deg,#f39acb,#9f7aea);
+  color:white;
+
+  font-size:16px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  margin-top:5px;
+}
+
+.register-card button:hover{
+  opacity:0.9;
+}
+
+.login-link{
+  margin-top:18px;
+  font-size:14px;
+}
+
+.login-link span{
+  color:#7c3aed;
+  font-weight:bold;
+  cursor:pointer;
+}

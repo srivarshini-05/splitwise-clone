@@ -1,0 +1,168 @@
+.dashboard{
+  padding:40px;
+  min-height:100vh;
+  background:#f6f7fb;
+}
+
+/* HEADER */
+
+.dashboard-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.title{
+  font-size:36px;
+  font-weight:bold;
+  background:linear-gradient(90deg,#8e2de2,#ff6ec4);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.welcome{
+  margin-top:10px;
+  font-weight:500;
+}
+
+.subtext{
+  color:#666;
+  margin-top:5px;
+}
+
+/* USER ID */
+
+.user-id{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+}
+
+.id-badge{
+  background:linear-gradient(135deg,#8e2de2,#ff6ec4);
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:13px;
+}
+
+.user-id button{
+  border:none;
+  background:#3498db;
+  color:white;
+  padding:4px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* LOGOUT */
+
+.logout-btn{
+  background:#ff4b4b;
+  border:none;
+  color:white;
+  padding:12px 22px;
+  border-radius:25px;
+  cursor:pointer;
+  font-weight:500;
+}
+
+/* FEATURE GRID */
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.feature-card{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  border:1px solid #eee;
+  cursor:pointer;
+  transition:0.2s ease;
+}
+
+.feature-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.08);
+}
+
+.feature-card h3{
+  margin-top:10px;
+  margin-bottom:8px;
+}
+
+.feature-card p{
+  color:#666;
+  line-height:1.5;
+}
+
+/* ICONS */
+
+.feature-icon{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  color:white;
+  font-size:20px;
+}
+
+/* gradients */
+
+.gradient1{
+  background:linear-gradient(135deg,#9f7aea,#f39acb);
+}
+
+.gradient2{
+  background:linear-gradient(135deg,#4facfe,#a18cd1);
+}
+
+.gradient3{
+  background:linear-gradient(135deg,#00c9a7,#00e4d0);
+}
+
+.gradient4{
+  background:linear-gradient(135deg,#ff7a18,#ffb347);
+}
+
+/* SHARED EXPENSE */
+
+.shared-expense{
+  margin-top:40px;
+  background:#efe7ff;
+  padding:25px;
+  border-radius:16px;
+}
+
+.shared-header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.shared-icon{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#9f7aea,#f39acb);
+  border-radius:12px;
+  color:white;
+  font-size:20px;
+}
+
+.shared-link{
+  display:inline-block;
+  margin-top:10px;
+  color:#7b2ff7;
+  cursor:pointer;
+  font-weight:500;
+}
