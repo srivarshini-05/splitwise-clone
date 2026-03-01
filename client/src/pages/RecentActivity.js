@@ -25,7 +25,7 @@ function RecentActivity() {
 
     try{
       const res = await axios.get(
-        `http://splitwise-clone-production.up.railway.app/api/overview/transactions/${user.id}`
+        `http://splitwise-server-b4zr.onrender.com/api/overview/transactions/${user.id}`
       );
 
       setTransactions(res.data);
@@ -49,7 +49,7 @@ function RecentActivity() {
   const fetchTransactions = async ()=>{
     try{
       const res = await axios.get(
-        `http://splitwise-clone-production.up.railway.app/api/overview/transactions/${user.id}`
+        `http://splitwise-server-b4zr.onrender.com/api/overview/transactions/${user.id}`
       );
 
       setTransactions(res.data);
@@ -67,7 +67,7 @@ function RecentActivity() {
     try{
 
       await axios.post(
-        "http://splitwise-clone-production.up.railway.app/api/overview/income",
+        "http://splitwise-server-b4zr.onrender.com/api/overview/income",
         {
           user_id:user.id,
           amount:income,
@@ -96,7 +96,7 @@ function RecentActivity() {
     try{
 
       await axios.post(
-        "http://splitwise-clone-production.up.railway.app/api/overview/personal-expense",
+        "http://splitwise-server-b4zr.onrender.com/api/overview/personal-expense",
         {
           user_id:user.id,
           amount:expense,

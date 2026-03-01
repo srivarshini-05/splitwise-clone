@@ -15,7 +15,7 @@ function SharedExpenses() {
   const fetchGroups = async () => {
     try {
       const res = await axios.get(
-        `http://splitwise-clone-production.up.railway.app/api/groups/user/${user.id}`
+        `http://splitwise-server-b4zr.onrender.com/api/groups/user/${user.id}`
       );
       setGroups(res.data);
     } catch (err) {

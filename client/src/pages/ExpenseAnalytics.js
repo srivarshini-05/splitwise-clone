@@ -44,14 +44,14 @@ function ExpenseAnalytics() {
 
   const fetchBarData = async () => {
     const res = await axios.get(
-      `http://splitwise-clone-production.up.railway.app/api/analytics/monthly/${user.id}`
+      `splitwise-server-b4zr.onrender.com/api/analytics/monthly/${user.id}`
     );
     setBarData(res.data);
   };
 
   const fetchPieData = async () => {
     const res = await axios.get(
-      `http://splitwise-clone-production.up.railway.app/api/analytics/categories/${user.id}`
+      `splitwise-server-b4zr.onrender.com/api/analytics/categories/${user.id}`
     );
     setPieData(res.data);
   };

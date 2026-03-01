@@ -24,7 +24,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "http://splitwise-clone-production.up.railway.app/api/auth/register",
+        "http://splitwise-server-b4zr.onrender.com/api/auth/register",
         form
       );
 

@@ -17,7 +17,7 @@ function AddExpense() {
 
     try {
       await axios.post(
-        `http://splitwise-clone-production.up.railway.app/api/groups/${groupId}/add-expense`,
+        `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/add-expense`,
         {
           title,
           total_amount: amount,

@@ -25,7 +25,7 @@ function Login({ setUser }) {
     try {
 
       const response = await axios.post(
-        "http://splitwise-clone-production.up.railway.app/api/auth/login",
+        "http://splitwise-server-b4zr.onrender.com/api/auth/login",
         form
       );
 
