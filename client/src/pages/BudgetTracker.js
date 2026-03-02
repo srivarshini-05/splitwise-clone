@@ -34,7 +34,7 @@ function BudgetTracker() {
   const fetchBudgets = async () => {
     try {
       const res = await axios.get(
-        `splitwise-server-b4zr.onrender.com/api/budget/${user.id}`
+        `http://splitwise-server-b4zr.onrender.com/api/budget/${user.id}`
       );
       setBudgets(res.data);
     } catch (err) {
@@ -46,7 +46,7 @@ function BudgetTracker() {
     if (!category || !limit) return;
 
     try {
-      await axios.post("splitwise-server-b4zr.onrender.com/api/budget/set", {
+      await axios.post("http://splitwise-server-b4zr.onrender.com/api/budget/set", {
         user_id: user.id,
         category,
         monthly_limit: limit,

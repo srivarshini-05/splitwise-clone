@@ -44,14 +44,14 @@ function ExpenseAnalytics() {
 
   const fetchBarData = async () => {
     const res = await axios.get(
-      `splitwise-server-b4zr.onrender.com/api/analytics/monthly/${user.id}`
+      `http://splitwise-server-b4zr.onrender.com/api/analytics/monthly/${user.id}`
     );
     setBarData(res.data);
   };
 
   const fetchPieData = async () => {
     const res = await axios.get(
-      `splitwise-server-b4zr.onrender.com/api/analytics/categories/${user.id}`
+      `http://splitwise-server-b4zr.onrender.com/api/analytics/categories/${user.id}`
     );
     setPieData(res.data);
   };
