@@ -25,7 +25,7 @@ function RecentActivity() {
 
     try{
       const res = await axios.get(
-        `http://splitwise-server-b4zr.onrender.com/api/overview/transactions/${user.id}`
+        `${process.env.REACT_APP_API_URL}/api/overview/transactions/${user.id}`
       );
 
       setTransactions(res.data);
@@ -49,7 +49,7 @@ function RecentActivity() {
   const fetchTransactions = async ()=>{
     try{
       const res = await axios.get(
-        `http://splitwise-server-b4zr.onrender.com/api/overview/transactions/${user.id}`
+        `${process.env.REACT_APP_API_URL}/api/overview/transactions/${user.id}`
       );
 
       setTransactions(res.data);
@@ -67,7 +67,7 @@ function RecentActivity() {
     try{
 
       await axios.post(
-        "http://splitwise-server-b4zr.onrender.com/api/overview/income",
+        `${process.env.REACT_APP_API_URL}/api/overview/income`,
         {
           user_id:user.id,
           amount:income,
@@ -96,7 +96,7 @@ function RecentActivity() {
     try{
 
       await axios.post(
-        "http://splitwise-server-b4zr.onrender.com/api/overview/personal-expense",
+        `${process.env.REACT_APP_API_URL}/api/overview/personal-expense`,
         {
           user_id:user.id,
           amount:expense,

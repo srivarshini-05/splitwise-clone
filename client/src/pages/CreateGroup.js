@@ -21,7 +21,7 @@ function CreateGroup() {
 
   const createGroup = async () => {
     try {
-      await axios.post("http://splitwise-server-b4zr.onrender.com/api/groups/create", {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/groups/create`, {
         name,
         description,
         created_by: user.id,

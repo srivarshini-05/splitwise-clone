@@ -20,7 +20,7 @@ function BudgetTracker() {
   const fetchBudgets = async () => {
     try {
       const res = await axios.get(
-        `http://splitwise-server-b4zr.onrender.com/api/budget/${user.id}`
+        `${process.env.REACT_APP_API_URL}/api/budget/${user.id}`
       );
       setBudgets(res.data);
     } catch (err) {
@@ -34,7 +34,7 @@ function BudgetTracker() {
   const fetchBudgets = async () => {
     try {
       const res = await axios.get(
-        `http://splitwise-server-b4zr.onrender.com/api/budget/${user.id}`
+        `${process.env.REACT_APP_API_URL}/api/budget/${user.id}`
       );
       setBudgets(res.data);
     } catch (err) {
@@ -46,7 +46,7 @@ function BudgetTracker() {
     if (!category || !limit) return;
 
     try {
-      await axios.post("http://splitwise-server-b4zr.onrender.com/api/budget/set", {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/budget/set`, {
         user_id: user.id,
         category,
         monthly_limit: limit,

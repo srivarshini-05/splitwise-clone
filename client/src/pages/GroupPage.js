@@ -38,7 +38,7 @@ function GroupPage() {
 
   const fetchGroupDetails = async () => {
     const response = await axios.get(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}`
+      `${process.env.REACT_APP_API_URL}/api/groups/${groupId}`
     );
     setGroup(response.data.group);
     setMembers(response.data.members);
@@ -46,14 +46,14 @@ function GroupPage() {
 
   const fetchBalances = async () => {
     const response = await axios.get(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/balances/${user.id}`
+      `${process.env.REACT_APP_API_URL}/api/groups/${groupId}/balances/${user.id}`
     );
     setBalances(response.data);
   };
 
   const fetchTransactions = async () => {
     const response = await axios.get(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/transactions`
+      `${process.env.REACT_APP_API_URL}/api/groups/${groupId}/transactions`
     );
 
     setTransactions(response.data);
@@ -68,7 +68,7 @@ function GroupPage() {
 
   const fetchSettlements = async () => {
     const response = await axios.get(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/settlements`
+      `${process.env.REACT_APP_API_URL}/api/groups/${groupId}/settlements`
     );
 
     setSettlements(response.data);
@@ -76,7 +76,7 @@ function GroupPage() {
 
   const fetchPaidSettlements = async () => {
     const response = await axios.get(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/paid-settlements`
+      `${process.env.REACT_APP_API_URL}/api/groups/${groupId}/paid-settlements`
     );
 
     setPaidSettlements(response.data);
@@ -84,7 +84,7 @@ function GroupPage() {
 
   const handleMarkPaid = async (settlement) => {
     await axios.post(
-      `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/settle`,
+      `${process.env.REACT_APP_API_URL}m/api/groups/${groupId}/settle`,
       {
         from_user: settlement.from_id,
         to_user: settlement.to_id,

@@ -24,7 +24,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "https://splitwise-server-b4zr.onrender.com/api/auth/register",
+        `${process.env.REACT_APP_API_URL}/api/auth/register`,
         form
       );
 

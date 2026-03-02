@@ -20,7 +20,7 @@ function FinancialOverview() {
     const fetchOverview = async () => {
       try {
         const response = await axios.get(
-          `http://splitwise-server-b4zr.onrender.com/api/overview/${user.id}`
+          `${process.env.REACT_APP_API_URL}/api/overview/${user.id}`
         );
         setData(response.data);
       } catch (error) {

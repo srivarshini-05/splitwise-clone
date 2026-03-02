@@ -17,7 +17,7 @@ function AddExpense() {
 
     try {
       await axios.post(
-        `http://splitwise-server-b4zr.onrender.com/api/groups/${groupId}/add-expense`,
+        `${process.env.REACT_APP_API_URL}/api/groups/${groupId}/add-expense`,
         {
           title,
           total_amount: amount,

@@ -25,7 +25,7 @@ function Login({ setUser }) {
     try {
 
       const response = await axios.post(
-        "http://splitwise-server-b4zr.onrender.com/api/auth/login",
+        `${process.env.REACT_APP_API_URL}/api/auth/login`,
         form
       );
 
